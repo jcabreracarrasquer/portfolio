@@ -25,6 +25,7 @@ const acbpImg = require('../../assets/images/acbp/acbp.png');
 const ikeaImg = require('../../assets/images/ikea/ikeaportada.jpg'); 
 const mixImg = require('../../assets/images/mix/banfner.png');  
 const beyondImg = require('../../assets/images/beyond/BeyondRealityLogo1.png'); 
+const portfolio = require('../../assets/images/portfolio/portfolio1.png'); 
 
 // --- LISTA DE SOFTWARES ---
 const SOFTWARES = [
