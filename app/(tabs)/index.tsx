@@ -91,7 +91,6 @@ const GALLERY = {
     require('../../assets/images/mix/ejemplo3.jpg'),
     require('../../assets/images/mix/camiSantos.png'),
   ],
-  // Placeholder para la galería del juego
   beyond: [
     beyondImg,
     require('../../assets/images/beyond/captura.png'),
@@ -112,6 +111,12 @@ const GALLERY = {
     require('../../assets/images/beyond/Cuadro.png'),
     require('../../assets/images/beyond/Dardos.png'),
     require('../../assets/images/beyond/Estantería.png'),
+  ],
+  // NUEVA GALERÍA PORTFOLIO
+  portfolio: [
+    bannerImg,
+    profileCutout,
+    mixImg,
   ]
 };
 
@@ -121,6 +126,7 @@ const CAROUSEL_IMAGES = [
   ...GALLERY.bagon.slice(0, 3),
   ...GALLERY.mix.slice(0, 5),
   ...GALLERY.ikea.slice(0, 3),
+  ...GALLERY.portfolio, // Añadido portfolio
 ].sort(() => Math.random() - 0.5);
 
 const COLORS = {
@@ -136,10 +142,20 @@ const COLORS = {
 // --- BASE DE DATOS PROYECTOS ---
 const PROJECTS = [
   {
-    id: 6, // Nuevo ID
+    id: 7, // NUEVO PROYECTO
+    title: "Portfolio Personal",
+    category: "DESARROLLO WEB & UI/UX",
+    image: bannerImg, 
+    desc: "Diseño y desarrollo de mi propia identidad digital interactiva.",
+    fullDesc: "Creación integral de mi portafolio web. Desde la conceptualización y diseño UI en Figma, hasta la programación desde cero utilizando React Native y Expo para Web. El proyecto incluye animaciones 3D avanzadas, carruseles infinitos, optimización para dispositivos móviles y despliegue continuo.",
+    gallery: GALLERY.portfolio,
+    videoUrl: null 
+  },
+  {
+    id: 6,
     title: "Beyond Reality",
     category: "GAME ART & UX/UI",
-    image: beyondImg, // Asegúrate de poner la foto real aquí
+    image: beyondImg,
     desc: "Videojuego cooperativo sobre percepción. Arte 3D/2D, UX/UI y Diseño.",
     fullDesc: "Videojuego cooperativo desarrollado en Unity que explora los límites entre realidad e ilusión. Me encargué de la propuesta gráfica, modelado de objetos 3D y habitaciones, así como el diseño UX/UI. Mecánicas de generación procedural y análisis perceptivo.",
     gallery: GALLERY.beyond,
@@ -166,13 +182,12 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: "Anuncio IKEA (No Oficial)",
-    category: "PRODUCCIÓN Y EDICIÓN",
-    image: ikeaImg, 
-    desc: "Dirección creativa, producción y edición de spot publicitario.",
-    fullDesc: "Producción integral inspirada en el estilo publicitario de IKEA. Nos encargamos de la dirección creativa, la planificación del set y la producción audiovisual.",
-    gallery: GALLERY.ikea,
-    videoUrl: "https://www.youtube.com/watch?v=kqduFN6LFmk" 
+    title: "ACBP",
+    category: "DISEÑO UX/UI",
+    image: acbpImg,
+    desc: "Diseño de interfaces para programas y diseño de manuales corporativos.",
+    fullDesc: "Diseños UX/UI para programas y aplicaciones de la empresa. Se desarrollaron pantallas visuales completas y un manual de identidad corporativa.",
+    gallery: GALLERY.acbp,
   },
   {
     id: 4,
@@ -186,12 +201,13 @@ const PROJECTS = [
   },
   {
     id: 5,
-    title: "ACBP",
-    category: "DISEÑO UX/UI",
-    image: acbpImg,
-    desc: "Diseño de interfaces para programas y diseño de manuales corporativos.",
-    fullDesc: "Diseños UX/UI para programas y aplicaciones de la empresa. Se desarrollaron pantallas visuales completas y un manual de identidad corporativa.",
-    gallery: GALLERY.acbp,
+    title: "Anuncio IKEA (No Oficial)",
+    category: "PRODUCCIÓN Y EDICIÓN",
+    image: ikeaImg, 
+    desc: "Dirección creativa, producción y edición de spot publicitario.",
+    fullDesc: "Producción integral inspirada en el estilo publicitario de IKEA. Nos encargamos de la dirección creativa, la planificación del set y la producción audiovisual.",
+    gallery: GALLERY.ikea,
+    videoUrl: "https://www.youtube.com/watch?v=kqduFN6LFmk" 
   }
 ];
 
@@ -348,7 +364,6 @@ const ProjectCard = ({ item, onPress }: { item: any, onPress: () => void }) => {
   const { width } = useWindowDimensions();
   const isMobile = width < 768; 
   
-  // Ancho dinámico: 100% en móvil, 48% en desktop (para 2 columnas)
   const cardWidth = isMobile ? '100%' : '48%';
 
   return (
@@ -359,9 +374,9 @@ const ProjectCard = ({ item, onPress }: { item: any, onPress: () => void }) => {
       onHoverIn={() => { setIsHovered(true); Animated.timing(scaleAnim, { toValue: 1.02, duration: 200, useNativeDriver: false }).start(); }}
       onHoverOut={() => { setIsHovered(false); Animated.timing(scaleAnim, { toValue: 1, duration: 200, useNativeDriver: false }).start(); }}
     >
-      <Animated.View style={[styles.cardDesktopRow, { // Usamos un estilo unificado pero flexible
-          flexDirection: 'column', // Imagen arriba, texto abajo
-          height: 380, // Altura fija para que queden iguales
+      <Animated.View style={[styles.cardDesktopRow, {
+          flexDirection: 'column', 
+          height: 380,
           transform: [{ scale: scaleAnim }], 
           borderColor: isHovered ? COLORS.accent : 'rgba(255,255,255,0.1)', 
           shadowOpacity: isHovered ? 0.2 : 0 
