@@ -480,7 +480,7 @@ export default function PortfolioScreen() {
                 Transformo ideas en realidades visuales.
               </Text>
               <View style={styles.heroActions}>
-                 <SocialButton title="Ver LinkedIn" url="https://linkedin.com/in/jorge-cabrera-carrasquer-6bb2b6380/" />
+                 <SocialButton title="LinkedIn" url="https://linkedin.com/in/jorge-cabrera-carrasquer-6bb2b6380/" />
                  <SocialButton title="Instagram" url="https://instagram.com/jcabreradesign/" />
               </View>
             </View>
