@@ -142,11 +142,11 @@ const COLORS = {
 // --- BASE DE DATOS PROYECTOS ---
 const PROJECTS = [
   {
-    id: 7, // NUEVO PROYECTO
+    id: 7,
     title: "Portfolio Personal",
     category: "DESARROLLO WEB & UI/UX",
     image: bannerImg, 
-    desc: "Diseño y desarrollo de mi propia identidad digital interactiva.",
+    desc: "Diseño y desarrollo de mi propio web.",
     fullDesc: "Creación integral de mi portafolio web. Desde la conceptualización y diseño UI en Figma, hasta la programación desde cero utilizando React Native y Expo para Web. El proyecto incluye animaciones 3D avanzadas, carruseles infinitos, optimización para dispositivos móviles y despliegue continuo.",
     gallery: GALLERY.portfolio,
     videoUrl: null 
