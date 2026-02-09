@@ -115,6 +115,12 @@ const GALLERY = {
   // NUEVA GALERÍA PORTFOLIO
   portfolio: [
     require('../../assets/images/portfolio/portfolio.png'),
+    require('../../assets/images/portfolio/wireframes.png'),
+    require('../../assets/images/portfolio/wireframes1.png'),
+    require('../../assets/images/portfolio/portfolio1.png'),
+    require('../../assets/images/portfolio/portfolio2.png'),
+    require('../../assets/images/portfolio/portfolio3.png'),
+    require('../../assets/images/portfolio/portfolio4.png'),
   ]
 };
 
