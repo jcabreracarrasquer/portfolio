@@ -24,8 +24,8 @@ const bagonImg = require('../../assets/images/bagon/bagon.jpg');
 const acbpImg = require('../../assets/images/acbp/acbp.png');
 const ikeaImg = require('../../assets/images/ikea/ikeaportada.jpg'); 
 const mixImg = require('../../assets/images/mix/banfner.png');  
-const beyondImg = require('../../assets/images/beyond/BeyondRealityLogo1.png'); 
-const portfolio = require('../../assets/images/portfolio/portfolio1.png'); 
+const beyondImg = require('../../assets/images/beyond/BeyondRealityLogo1.png');
+const portfolioPortada = require('../../assets/images/portfolio/portfolio1.png'); 
 
 // --- LISTA DE SOFTWARES ---
 const SOFTWARES = [
@@ -150,7 +150,7 @@ const PROJECTS = [
     id: 7,
     title: "Portfolio Personal",
     category: "DESARROLLO WEB & UI/UX",
-    image: bannerImg, 
+    image: portfolioPortada, 
     desc: "Diseño y desarrollo de mi propio web.",
     fullDesc: "Creación integral de mi portafolio web. Desde la conceptualización y diseño UI en Figma, hasta la programación desde cero utilizando React Native y Expo para Web. El proyecto incluye animaciones 3D avanzadas, carruseles infinitos, optimización para dispositivos móviles y despliegue continuo.",
     gallery: GALLERY.portfolio,
