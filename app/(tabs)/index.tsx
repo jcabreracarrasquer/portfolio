@@ -147,14 +147,14 @@ const COLORS = {
 // --- BASE DE DATOS PROYECTOS ---
 const PROJECTS = [
   {
-    id: 7,
-    title: "Portfolio Personal",
-    category: "DESARROLLO WEB & UI/UX",
-    image: portfolioPortada, 
-    desc: "Diseño y desarrollo de mi propio web.",
-    fullDesc: "Creación integral de mi portafolio web. Desde la conceptualización y diseño UI en Figma, hasta la programación desde cero utilizando React Native y Expo para Web. El proyecto incluye animaciones 3D avanzadas, carruseles infinitos, optimización para dispositivos móviles y despliegue continuo.",
-    gallery: GALLERY.portfolio,
-    videoUrl: null 
+    id: 1,
+    title: "Peña Fragatina",
+    category: "BRANDING Y DISEÑO DEPORTIVO",
+    image: fragatinaImg,
+    desc: "Diseño de identidad, cartelería y estrategia visual para redes sociales.",
+    fullDesc: "Desarrollo completo de la identidad visual de Peña Fragatina CF. Diseñando todo tipo de publicaciones para redes sociales (Carteles de partido, matchdays, eventos especiales, etc.)",
+    gallery: GALLERY.fragatina,
+    videoUrl: null
   },
   {
     id: 6,
@@ -166,14 +166,14 @@ const PROJECTS = [
     gallery: GALLERY.beyond,
   },
   {
-    id: 1,
-    title: "Peña Fragatina",
-    category: "BRANDING Y DISEÑO DEPORTIVO",
-    image: fragatinaImg,
-    desc: "Diseño de identidad, cartelería y estrategia visual para redes sociales.",
-    fullDesc: "Desarrollo completo de la identidad visual de Peña Fragatina CF. Diseñando todo tipo de publicaciones para redes sociales (Carteles de partido, matchdays, eventos especiales, etc.)",
-    gallery: GALLERY.fragatina,
-    videoUrl: null
+    id: 7,
+    title: "Portfolio Personal",
+    category: "DESARROLLO WEB & UI/UX",
+    image: portfolioPortada, 
+    desc: "Diseño y desarrollo de mi propio web.",
+    fullDesc: "Creación integral de mi portafolio web. Desde la conceptualización y diseño UI en Figma, hasta la programación desde cero utilizando React Native y Expo para Web. El proyecto incluye animaciones 3D avanzadas, carruseles infinitos, optimización para dispositivos móviles y despliegue continuo.",
+    gallery: GALLERY.portfolio,
+    videoUrl: null 
   },
   {
     id: 2,
