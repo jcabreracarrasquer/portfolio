@@ -114,9 +114,7 @@ const GALLERY = {
   ],
   // NUEVA GALERÍA PORTFOLIO
   portfolio: [
-    bannerImg,
-    profileCutout,
-    mixImg,
+    require('../../assets/images/portfolio/portfolio.png'),
   ]
 };
 
