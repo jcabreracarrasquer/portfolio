@@ -43,9 +43,11 @@ const GALLERY = {
   fragatina: [
     require('../../assets/images/fragatina/fragatina_1.png'),
     require('../../assets/images/fragatina/fragatina_2.png'),
+    require('../../assets/images/fragatina/fragatina_15.png'),
     require('../../assets/images/fragatina/fragatina_3.png'),
     require('../../assets/images/fragatina/fragatina_4.png'),
     require('../../assets/images/fragatina/fragatina_5.png'),
+    require('../../assets/images/fragatina/fragatina_16.png'),
     require('../../assets/images/fragatina/fragatina_6.png'),
     require('../../assets/images/fragatina/fragatina_7.png'),
     require('../../assets/images/fragatina/fragatina_8.png'),
